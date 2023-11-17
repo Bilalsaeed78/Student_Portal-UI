@@ -1,0 +1,7 @@
+.printing-report-table-body tr td {
+  padding: 1.5em;
+}
+
+.printing-report-table-body tr:nth-child(5) td {
+  font-weight: bold;
+}

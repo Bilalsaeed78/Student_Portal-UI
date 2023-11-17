@@ -1,0 +1,93 @@
+<nav class="flexbox navbar">
+  <a href="/home/index.html"
+    ><img class="logo" src="/assets/logo.png" alt="logo"
+  /></a>
+  <div class="flexbox nav-details">
+    <div id="user-details" class="flexbox user-details">
+      <img
+        id="user-avatar"
+        class="user-avatar"
+        src="/assets/default-avatar.jpg"
+        alt=""
+      />
+      <p class="username">Mujtaba</p>
+    </div>
+
+    <div class="flexbox menu" id="menu">
+      <div class="patty"></div>
+      <div class="patty"></div>
+      <div class="patty"></div>
+    </div>
+
+    <div class="menu-container" id="menu-bar">
+      <div class="flexbox menu-content-container">
+        <a href="/home/index.html" class="flexbox menu-item">
+          <span class="material-symbols-outlined icon"> home </span>
+          <p>Home</p>
+        </a>
+
+        <div
+          id="course-options"
+          class="flexbox menu-item"
+          onclick="showCourseCollapse()"
+        >
+          <span class="material-symbols-outlined icon"> menu_book </span>
+          <p>Courses</p>
+
+          <span
+            id="course-show-more1"
+            class="material-symbols-outlined icon course-show-more"
+            >expand_more</span
+          >
+        </div>
+
+        <div id="course-collapse" class="collapse-container hide">
+          <a href="/courses/current-sem/index.html" class="collapse-item">
+            <li>Current Semester</li>
+          </a>
+          <a href="/courses/prev-sem/index.html" class="collapse-item">
+            <li>Previous Semester</li>
+          </a>
+          <a href="/courses/sem-result/index.html" class="collapse-item">
+            <li>Semester Result</li>
+          </a>
+        </div>
+
+        <a href="/schedule/index.html" class="flexbox menu-item">
+          <span class="material-symbols-outlined icon"> calendar_month </span>
+          <p>Class Schedule</p>
+        </a>
+
+        <a href="/courses/printing-report/index.html" class="flexbox menu-item">
+          <span class="material-symbols-outlined icon"> print </span>
+          <p>Print Report</p>
+        </a>
+
+        <div
+          id="account-options"
+          class="flexbox menu-item"
+          onclick="showAccountCollapse()"
+        >
+          <span class="material-symbols-outlined icon"> manage_accounts </span>
+          <p>Account Settings</p>
+          <span
+            id="course-show-more2"
+            class="material-symbols-outlined icon course-show-more"
+            >expand_more</span
+          >
+        </div>
+
+        <div id="account-collapse" class="collapse-container hide">
+          <a href="/change-password/index.html" class="collapse-item">
+            <li>Change Password</li>
+          </a>
+        </div>
+
+        <a href="/login/index.html" class="flexbox menu-item">
+          <span class="material-symbols-outlined icon"> logout </span>
+          <p>Logout</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

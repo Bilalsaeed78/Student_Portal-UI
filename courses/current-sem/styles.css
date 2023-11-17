@@ -1,0 +1,71 @@
+.current-sem-table-body tr th:nth-child(1) {
+  width: 7%;
+}
+
+.current-sem-table-body tr th:nth-child(2) {
+  width: 25%;
+}
+
+.current-sem-table-body tr td:nth-child(1) {
+  width: 7%;
+}
+
+.current-sem-table-body tr td:nth-child(2) {
+  width: 25%;
+}
+
+.current-sem-table-head tr th:nth-child(1) {
+  width: 7%;
+}
+
+.current-sem-table-head tr th:nth-child(2) {
+  width: 25%;
+}
+
+.current-sem-table-head tr th:nth-child(1) {
+  width: 7%;
+}
+
+.current-sem-table-head tr th:nth-child(2) {
+  width: 25%;
+}
+
+@media only screen and (height < 920px) and (width < 768px) {
+  .current-sem-table-body {
+    height: 35rem;
+  }
+}
+
+@media only screen and (height < 768px) {
+  .current-sem-table-body {
+    height: 23rem;
+  }
+}
+
+@media only screen and (height < 500px) {
+  .current-sem-table-body {
+    height: 12rem;
+  }
+}
+
+@media only screen and (width < 768px) {
+  .current-sem-table-body td:nth-child(1) {
+    display: none;
+  }
+  
+  .current-sem-table-head tr th:nth-child(1){
+    width: 100%;
+  }
+  
+  .current-sem-table-head tr th:nth-child(2){
+    width: 100%;
+  }
+  
+  .current-sem-table-body tr td:nth-child(1){
+    width: 100%;
+  }
+  
+  .current-sem-table-body tr td:nth-child(2){
+    width: 100%;
+  }
+}

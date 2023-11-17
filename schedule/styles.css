@@ -1,0 +1,21 @@
+.weekly-sched-body tr td {
+    padding: 1em;
+  }
+
+  @media only screen and (height < 920px) and (width < 768px) {
+    .weekly-sched-body {
+      height: 30rem;
+    }
+  }
+  
+  @media only screen and (height < 768px) {
+    .weekly-sched-body {
+      height: 23rem;
+    }
+  }
+  
+  @media only screen and (height < 500px) {
+    .weekly-sched-body {
+      height: 12rem;
+    }
+  }

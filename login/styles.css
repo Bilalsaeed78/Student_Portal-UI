@@ -1,0 +1,233 @@
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top right, var(--primary-color) 45%, var(--ternary-color));
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+    overflow-y: auto;
+    gap: 3rem;
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--ternary-color) 99%);
+  }
+}
+
+.logo {
+  display: flex;
+  height: 60px;
+  width: auto;
+  margin: 1rem auto;
+}
+
+.logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s all ease-in-out;
+}
+
+.form-container {
+  gap: 1rem;
+  height: 550px;
+  width: 400px;
+  border-radius: 5px;
+
+  @media (max-width: 768px) {
+    height: 90%;
+    width: 80%;
+  }
+
+  @media (max-width: 1300px) {
+    margin-top: 11vh;
+  }
+}
+
+.sub-header {
+  font-size: var(--text-sub-header);
+  font-weight: 300;
+  color: var(--secondary-color);
+  margin: 2rem 0rem;
+  cursor: pointer;
+  text-align: center;
+  @media (max-width: 768px) {
+    margin: 1rem 0rem;
+  }
+}
+
+.sub-header2 {
+  display: block;
+  font-size: var(--text-main-body);
+}
+
+.field-container {
+  margin-bottom: 2rem;
+}
+
+.textfield-container {
+  width: 85%;
+}
+
+.field-label {
+  font-size: var(--text-main-body);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+  border-bottom: 1px solid var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.password-icon {
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 0rem 1rem;
+}
+
+.text-field {
+  font-size: var(--text-body);
+  padding: 0.75rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.text-field::placeholder {
+  color: #747d8c;
+  font-size: var(--text-body);
+  font-weight: 300;
+}
+
+.error {
+  border-bottom: 1px solid rgba(205, 92, 92);
+}
+
+.error-text {
+  padding: 0.5rem 0rem;
+  font-size: var(--text-body);
+  color: red;
+}
+
+.verified {
+  border-bottom: 1px solid rgba(76, 76, 163, 1);
+}
+
+.login-button {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 1rem;
+  font-size: var(--text-body);
+  margin: 0.5rem auto 0.5rem auto;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  background-color: var(--secondary-color);
+}
+
+.login-button:hover {
+  background-color: transparent;
+  outline: 2px solid var(--secondary-color);
+  color: var(--secondary-text-colo);
+  transition: all 0.75s ease-in-out;
+}
+
+.notes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70vh;
+  width: 55%;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 2rem;
+  transition: 0.2s all;
+  cursor: pointer;
+  gap: 2rem;
+  background-image: linear-gradient(to top right, var(--secondary-color) 5%, var(--primary-color));
+
+  @media (max-width: 1300px) {
+    height: 500px;
+    width: 90%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.note-item {
+  border-radius: 5px;
+  padding: 1rem;
+  @media (max-width: 1300px) {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+.note-item:hover {
+  animation: animate-note 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-note {
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.13);
+  }
+}
+
+.note-item-header {
+  font-size: var(--text-sub-header);
+}
+
+.note-item-content {
+  font-size: var(--text-body);
+}
+
+.note-item1 {
+  height: 330px;
+  width: 300px;
+  transform: rotate(2deg);
+  transition-delay: 0.2s;
+  background-image: linear-gradient(to top left, var(--primary-text-color) 10%, rgb(255, 213, 128));
+}
+
+.note-item2 {
+  height: 250px;
+  width: 230px;
+  transform: rotate(-2deg);
+  background-image: linear-gradient(to top left, var(--primary-text-color) 10%, rgb(255, 255, 204));
+}
+
+.note-item3 {
+  height: 280px;
+  width: 250px;
+  transform: rotate(5deg);
+  transition-delay: 0.4s;
+  background-image: linear-gradient(to top left, var(--primary-text-color) 10%, rgb(204, 204, 255));
+}
+
+.note-item4 {
+  height: 200px;
+  width: 320px;
+  transform: rotate(-3deg);
+  transition-delay: 0.5s;
+  background-image: linear-gradient(to top left, var(--primary-text-color) 10%, rgb(137, 196, 244));
+}
+
+.note-item5 {
+  height: 210px;
+  width: 320px;
+  transform: rotate(5deg);
+  background-image: linear-gradient(to top left, var(--primary-text-color) 10%, rgb(255, 213, 128));
+}
